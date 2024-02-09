@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="./utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>PROTIPS</title>
+</head>
+
+<body>
+    <header class="header ">
+        <nav class="navbar container ">
+            <a href="./dashboard.html" class="nav-logo">PROTIPS</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <img src="./assest/Home.svg " class="icon" alt="">
+                    <a href="./index.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/Explore.svg" alt="">
+                    <a href="./blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/profile.svg " alt="">
+                    <a href="./profile.html" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/sign-out.svg" alt="">
+                    <a href="./homepage.html" class="nav-link">Sign Out</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+
+
+    <main>
+
+        <section class="container login__wrapper">
+            <div class="login__illustration animate__animated animate__fadeInUp">
+                <img src="./images/rafiki.svg" alt="">
+            </div>
+            <div class="form__container sign_up__wrapper animate__animated animate__fadeInUp">
+                <form class="sign__up__form" action="">
+                    <div>
+                        <h1 class="logo">PROTIPS</h1>
+                    </div>
+                    <h3>Sign up to your account</h3>
+                    <p>Already have an account? <a href="./login.html">Log in</a></p>
+                    <!-- first-name -->
+                    <label for="">First name <input type="text" placeholder="josh" /></label>
+                    <!-- last-name -->
+                    <label for="">
+                        Last name <input type="text" placeholder="Ugo" />
+                    </label>
+                    <!-- email-address -->
+                    <label for="">Email Address <input type="text" placeholder="joshyvibe@gmail.com" /></label>
+
+                    <!-- password -->
+                    <label for="">Password <input type="password" /></label>
+                    <!-- sign-up-btn -->
+                    <input type="submit" value="Sign Up" />
+                    <!-- google-facebook-apple-btn-sign-up -->
+                    <div class="inline-text">
+                        <!-- <hr /> -->
+                        <h5>or sign in with</h5>
+                        <!-- <hr /> -->
+                    </div>
+                    <!-- google-btn-sign-up -->
+                    <div class="inline">
+                        <button class="border-none">
+                            <a href=""><img src="./icons/Google - jpeg.svg" alt=""></a>
+                        </button>
+                        <!-- facebook-btn-sign-up -->
+                        <button class="border-none">
+                            <a href=""><img src="./icons/Facebook.svg" alt="" /></a>
+                        </button>
+                        <!--apple-btn-sign-up -->
+                        <button class="border-none">
+                            <a href=""><img src="./icons/Apple Logo.svg" alt="" /></a>
+                        </button>
+                    </div>
+                    <h5>
+                        By siging up, you <a href="">agree</a>to our
+                        <a href="">terms of use</a> and <a href="">privacy</a>
+                    </h5>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="./header.js"></script>
+    <script src="./login.js"></script>
+</body>
+
+</html>

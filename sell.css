@@ -1,0 +1,67 @@
+.sell__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.Instructions__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid green; */
+}
+
+input,
+select {
+  width: 300px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-block: 6px;
+  margin-bottom: 24px;
+}
+label {
+  margin-bottom: 12px;
+  display: block;
+}
+
+#sellBtn {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 475px) {
+  input,
+  select {
+    width: 360px;
+  }
+}
+
+@media (min-width: 640px) {
+  input,
+  select {
+    width: 520px;
+  }
+}
+
+@media (min-width: 768px) {
+  input,
+  select {
+    width: 620px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .buy__form {
+    width: 820px;
+  }
+}

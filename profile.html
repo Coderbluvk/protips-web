@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./utilities.css">
+    <title>User Profile</title>
+</head>
+
+<body>
+    <header class="header ">
+        <nav class="navbar container ">
+            <a href="./dashboard.html" class="nav-logo">PROTIPS</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <img src="./assest/Home.svg " class="icon" alt="">
+                    <a href="./dashboard.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/Explore.svg" alt="">
+                    <a href="./blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/profile.svg " alt="">
+                    <a href="./profile.html" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/sign-out.svg" alt="">
+                    <a href="./signup.html" class="nav-link">Sign Out</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <section class="container profile__section">
+        <div class="profile-avatar">
+            <img src="./images/profile-avatar.jpg" loading="lazy" alt="User Avatar">
+        </div>
+        <div class="profile-info">
+            <p class="box">First Name: John</p>
+            <p class="box">Last Name: Doe</p>
+            <p class="box">Phone Number: +1234567890</p>
+            <p class="box">Email: john.doe@example.com</p>
+            <p class="box">Bank Account: XXXX-XXXX-XXXX-1234</p>
+            <p class="box">Total Transactions: 50</p>
+
+            <div>
+                <button class="update-profile-btn">Edi Profile</button>
+                <button class="update-profile-btn">Contact us</button>
+
+            </div>
+        </div>
+    </section>
+    <script src="./header.js"></script>
+</body>
+
+</html>

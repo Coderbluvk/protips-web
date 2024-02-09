@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./buy.css">
+    <link rel="stylesheet" href="./utilities.css">
+
+    <title>PROTIPS</title>
+</head>
+
+<body>
+    <header class="header ">
+        <nav class="navbar container ">
+            <a href="./dashboard.html" class="nav-logo">PROTIPS</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <img src="./assest/Home.svg " class="icon" alt="">
+                    <a href="./dashboard.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/Explore.svg" alt="">
+                    <a href="./blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/profile.svg " alt="">
+                    <a href="./profile.html" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <img src="./assest/sign-out.svg" alt="">
+                    <a href="./homepage.html" class="nav-link">Sign Out</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <main>
+
+        <section class="container  Instructions__section">
+            <p>Click this button below to learn how to complete your crypto purchase</p>
+            <button id="howToBuyButton" onclick="toggleHowToBuy()">How to Buy</button>
+            <div id="howToBuyInstructions" style="display:none;">
+                <h2>How to Buy Crypto</h2>
+                <ol>
+                    <li>Select the cryptocurrency you want to buy from the dropdown menu (e.g., Bitcoin, Ethereum).</li>
+                    <li>Enter the amount of the selected cryptocurrency you wish to purchase.</li>
+                    <li>Provide the wallet address where you want to receive the purchased cryptocurrency.</li>
+                    <li>(Optional) Upload a QR code of your wallet for faster processing.</li>
+                    <li>Review the details and click the <strong>Buy Crypto</strong> button to confirm.</li>
+                    <li>Complete the payment using your preferred payment method.</li>
+                    <li>Receive a confirmation message once the transaction is successful.</li>
+                </ol>
+            </div>
+        </section>
+        <section class="container  buy-crypto-container">
+            <div class="buy__form">
+                <form id="buyCryptoForm">
+                    <label for="coin">Select Coin:</label>
+                    <select id="coin" name="coin">
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="ethereum">Ethereum</option>
+                        <option value="USDT">USDT</option>
+                        <option value="BNB">BNB</option>
+                        <!-- Add more cryptocurrency options as needed -->
+                    </select>
+
+                    <label for="amount">Amount:</label>
+                    <input type="text" id="amount" name="amount" required>
+
+                    <label for="wallet">Wallet Address or QR Code:</label>
+                    <input type="text" id="wallet" name="wallet" required>
+                    <label for="qrCode">Upload Wallet QR Code:</label>
+                    <input type="file" id="qrCode" name="qrCode" accept="image/*">
+                </form>
+                <button id="buyBtn" type="button" onclick="buyCrypto()">Buy Crypto</button>
+            </div>
+        </section>
+    </main>
+    <script src="./header.js"></script>
+    <script src="./buy.js"></script>
+</body>
+
+</html>
